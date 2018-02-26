@@ -2,7 +2,7 @@
 
 php -v
 
-for i in 1000 10000 100000 1000000 
+for i in 10000 1000000 
 do 
     printf "\n"
     php ./arrays_simple.php $i

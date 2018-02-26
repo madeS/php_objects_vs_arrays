@@ -21,7 +21,7 @@ $start = microtime(true);
 
 $totalResult = 0;
 for($i = 0; $i < $count; $i++) {
-    $itemIndex = rand(0,$countItems-1);
+    $itemIndex = $i % $countItems;
     $totalResult += $result[$itemIndex]['a'] + $result[$itemIndex]['b'] - $result[$itemIndex]['c'];
 }
 
@@ -30,3 +30,4 @@ for($i = 0; $i < $count; $i++) {
 $memory = memory_get_peak_usage();
 $time = (microtime(true) - $start);
 echo 'Time: ' . number_format($time,3,'.',' ') . '; Memory: ' . number_format($memory / (1024*1024) ,2,'.','') . ' MB;' . "\n";
+file_put_contents('../temp/getters_'.$count.'.txt', "{$argv[0]}=$time\n", FILE_APPEND);
