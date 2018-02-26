@@ -11,3 +11,4 @@ do
     php ./objects_with_constructor.php $i
     php ./objects_without_constructor.php $i
 done
+printf "\nDone\n"
