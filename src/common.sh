@@ -21,6 +21,11 @@ do
     cd ../setters
     ./common.sh  >/dev/null
 
+    printf "."
+
+    cd ../class_init
+    ./common.sh  >/dev/null
+
 done
 
 cd ..

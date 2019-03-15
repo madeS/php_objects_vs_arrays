@@ -1,0 +1,16 @@
+{
+    "description": "The PHP Speed Tests",
+    "name": "madeS/php_objects_vs_arrays",
+    "type": "project",
+    "homepage": "https://andrei.bogarevich.com",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1"
+    },
+    "classmap-authoritative": false,
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/app/"
+        }
+    }
+}
